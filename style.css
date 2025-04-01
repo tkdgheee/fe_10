@@ -1,0 +1,93 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,body{
+    height: 100%;
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container{
+    border: 1px gainsboro solid;
+    height: 600px;
+    width: 400px;
+    padding: 30px;
+    background-color: rgb(228, 243, 236);
+    border-radius: 5px;
+} 
+
+.calculater_display{
+    border: 1px gainsboro solid;
+    background-color: rgb(241, 245, 244);
+    height: 120px; 
+    margin-top: 10px;
+    font-size: 3rem;
+    text-align: end;
+    padding: 10px;
+    padding-top: 50px;
+    border-radius: 20px;
+    overflow: hidden;
+}
+
+.calculater_buttons{
+    background-color:rgb(230, 236, 237);
+    display: flex;
+    justify-content: center;
+    border: 1px gainsboro solid;
+    height: 400px;
+    flex-wrap: wrap;
+    border-radius: 20px;
+    margin-top: 3px;
+}
+
+.button_item{
+    display: flex;
+    flex-grow: 1;
+    flex-basis: 15%;
+    flex-wrap: wrap;
+    font-size: 1.5rem;
+    justify-content: center;
+    align-items: center;
+    border-radius: 43%;
+    margin: 10px;
+    background-color: rgb(248, 250, 252);
+    border: none;
+    box-shadow: 1.2px 1.2px rgb(167, 166, 166);
+}
+
+
+.button_item:active{
+    background-color: lightgray;
+    color: rgb(156, 154, 154);
+    box-shadow: inset 0 0 5px rgba(0, 0, 0, 0.2);
+}
+
+.Zero{
+    flex-basis: 50%;
+}
+
+.button_item[data-value="="]{
+    background-color: rgb(99, 196, 111);
+    color: azure;
+}
+
+.button_item[data-value="delete"]{
+    color: rgb(99, 196, 111);
+}
+
+
+.button_item[data-value="±"],
+.button_item[data-value="%"],
+.button_item[data-value="/"],
+.button_item[data-value="*"],
+.button_item[data-value="-"],
+.button_item[data-value="+"]{
+    background-color: aliceblue;
+}
