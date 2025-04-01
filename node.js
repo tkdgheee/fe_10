@@ -1,5 +1,7 @@
 const buttonItem = document.querySelectorAll(".button_item")
 const display = document.querySelector(".calculater_display")
+const operators = ["+", "-", "/", "%", "*","±"]
+
 
 let firstOperand = null;
 let operator = null;
